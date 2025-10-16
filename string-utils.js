@@ -1,3 +1,5 @@
+// Função que será testada
+
 function converterTexto(texto) {
     // 1. Divide a string em um array de caracteres
     const arrayDeCaracteres = texto.split(''); 
