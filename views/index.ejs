@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inversor de Texto</title>
+</head>
+
+<body>
+    <h1>Inversor de Texto Simples (com Teste Unitário)</h1>
+
+    <h2>Resultado: <%= typeof resultado !=='undefined' ? resultado : 'Aguardando texto...' %>
+    </h2>
+    <hr>
+
+    <form method="POST" action="/inverter">
+        <label for="texto">Insira o texto:</label>
+        <input type="text" id="texto" name="texto" required
+            value="<%= typeof textoOriginal !== 'undefined' ? textoOriginal : '' %>">
+
+        <button type="submit">Inverter Texto</button>
+    </form>
+</body>
+
+</html>
